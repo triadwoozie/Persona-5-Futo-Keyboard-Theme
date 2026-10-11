@@ -1,0 +1,109 @@
+# Format version: 1.0
+name = "Persona 5 Royal"
+author = "woozie"
+id = "io.github.p5r.theme"
+version = 4
+description = "Persona 5 Royal high-contrast crimson, carbon, and star pattern theme"
+
+[options]
+auto_borders = true
+roundedness = 0.0
+center_hints = false
+scale_text = 1.08
+scale_hints = 0.85
+weight_text = 400
+weight_hints = 500
+
+[options.font]
+font = "Persona5MenuFontPrototype-Regular.ttf"
+
+[options.background]
+image = "background.webp"
+opacity = 0.35
+action_bar_opacity = 0.70
+cropping = [0, 0, 1, 1]
+
+[colors]
+# Primaries & Inverses
+primary = "#E60012"
+on_primary = "#FFFFFF"
+primary_container = "#B8000F"
+on_primary_container = "#FFFFFF"
+inverse_primary = "#FFB4AB"
+
+# Secondary & Tertiary Accents (Canary Yellow)
+secondary = "#FFE600"
+on_secondary = "#000000"
+secondary_container = "#524400"
+on_secondary_container = "#FFE600"
+
+tertiary = "#FFE600"
+on_tertiary = "#000000"
+tertiary_container = "#524400"
+on_tertiary_container = "#FFE600"
+
+# Canvas Background
+background = "#0A0A0A"
+on_background = "#FFFFFF"
+
+# Key Surfaces: Dark red-tinted licorice inside, stark white text
+surface = "#14080A"
+on_surface = "#FFFFFF"
+surface_variant = "#1C0B0E"
+on_surface_variant = "#FFFFFF"
+surface_tint = "#E60012"
+inverse_surface = "#FFFFFF"
+inverse_on_surface = "#000000"
+
+surface_bright = "#240E12"
+surface_dim = "#0F0607"
+surface_container = "#16090C"
+surface_container_high = "#1F0D10"
+surface_container_highest = "#291116"
+surface_container_low = "#110708"
+surface_container_lowest = "#0A0304"
+
+# Outlines (Stark white procedural borders)
+outline = "#FFFFFF"
+outline_variant = "#FFFFFF"
+scrim = "#000000"
+
+# Error
+error = "#FF5449"
+on_error = "#FFFFFF"
+error_container = "#93000A"
+on_error_container = "#FFDAD6"
+
+# Keyboard Base & Tap Feedback
+keyboard_surface = "#0A0A0A"
+keyboard_surface_dim = "#050505"
+keyboard_container = "#14080A"
+keyboard_container_variant = "#1C0B0E"
+on_keyboard_container = "#FFFFFF"
+keyboard_press = "#E60012"
+keyboard_container_pressed = "#E6001254"
+on_keyboard_container_pressed = "#FFFFFF"
+
+# ---------------------------------------------------------
+# Custom Icons (Shift keys retained)
+# ---------------------------------------------------------
+
+[[asset.icon]]
+name = "shift_icon_1.png"
+target_density = 640
+
+[[asset.icon]]
+name = "shift_icon_2.png"
+target_density = 640
+
+[[matchrules.icon]]
+selector = "shift 0"
+asset = "shift_icon_1.png"
+
+[[matchrules.icon]]
+selector = "shift 1"
+asset = "shift_icon_2.png"
+
+[[matchrules.icon]]
+selector = "shift 2"
+asset = "shift_icon_2.png"
